@@ -1,0 +1,142 @@
+/* General styles for all screen sizes */
+header {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+    font-size: 75px;
+    color:black ;
+    stroke-width: 2px;
+    font-style: oblique;
+}
+
+.swiper-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    scroll-margin-right: 30px;
+}
+
+.swiper-slide {
+    text-align: center;
+    padding: 20px;
+    background-color: #0c09ee;
+    border: 10px solid #0505ea;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #bdf4fa;
+    padding: 50px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: #f3a6a6;
+    padding: 50px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #d7e1fc;
+    border-radius: 3px;
+}
+
+input[type="text"]:invalid,
+input[type="email"]:invalid,
+input[type="password"]:invalid,
+input[type="tel"]:invalid,
+input[type="date"]:invalid
+input[type="email"]{
+    border-color: red;
+    border-width: 3px;
+}
+
+input[type="text"]:valid,
+input[type="email"]:valid,
+input[type="password"]:valid,
+input[type="tel"]:valid,
+input[type="date"]:valid {
+    border-color: green;
+    border-width: 3px;
+
+}
+
+input[type="radio"] {
+    display: inline-block;
+}
+
+.radio-group label {
+    display: inline;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #abc0f7;
+    border-radius: 3px;
+}
+
+textarea:invalid {
+    border-color: red;
+    border-width: 3px;
+
+}
+
+textarea:valid {
+    border-color: green;
+    border-width: 3px;
+
+}
+
+input[type="submit"] {
+    background-color: #93c0f0;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 0%;
+}
+
+input[type="submit"]:hover {
+    background-color: #96bfe9;
+}
+/* Styles for mobile devices (up to 600px) */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #aed6f3; /* Mobile device background color */
+    margin: 0;
+    padding: 0;
+}
+
+/* Styles for tablets and desktops (601px and above) */
+@media (min-width: 601px) {
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #d3fbdb; /* Tablet and desktop background color */
+        margin: 0;
+        padding: 0;
+    }
+
+    main {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
